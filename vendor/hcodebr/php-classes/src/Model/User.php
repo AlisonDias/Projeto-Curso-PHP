@@ -42,7 +42,7 @@ class User extends Model{
 
 		}
 	}
-	//logar
+	//logar adm
 	public static function verifyLogin($inadmin = true)
 	{
 		if(
@@ -59,7 +59,7 @@ class User extends Model{
 
 		}
 	}
-	//deslogar
+	//deslogar adm
 	public static function logout()
 	{
 		$_SESSION[User::SESSION] = NULL;

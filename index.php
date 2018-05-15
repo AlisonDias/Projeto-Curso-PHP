@@ -41,7 +41,7 @@ $app->get('/admin/login', function(){
 	$page->setTpl("login");
 
 });
-//rota login
+//rota login adm
 $app->post('/admin/login', function(){
 
 	User::login($_POST["login"], $_POST["password"]);
@@ -51,7 +51,7 @@ $app->post('/admin/login', function(){
 
 });
 
-//rota deslogar
+//rota deslogar adm
 $app->get('/admin/logout', function(){
 
 	User::logout();
